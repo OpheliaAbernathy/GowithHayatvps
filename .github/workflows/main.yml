@@ -17,11 +17,10 @@ jobs:
 
       - name: Download AnyDesk
         run: |
-          Invoke-WebRequest -Uri "https://anydesk.com/en/downloads/thank-you?dv=win_exe" -OutFile "$env:TEMP\AnyDesk.exe"
+          Invoke-WebRequest -Uri "https://anydesk.com/en/downloads/thank-you?dv=win_exe" -OutFile "D:\la\GowithHayatvps\GowithHayatvps\AnyDesk.exe"
 
       - name: Connect to LiteManager
         run: cmd /c show.bat
 
       - name: Time Counter
         run: cmd /c loop.bat
-        
