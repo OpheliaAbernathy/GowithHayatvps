@@ -17,8 +17,8 @@ jobs:
 
       - name: Download AnyDesk
         run: |
-          Invoke-WebRequest -Uri "https://anydesk.com/en/downloads/thank-you?dv=win_exe" -OutFile "D:\la\GowithHayatvps\GowithHayatvps\AnyDesk.exe"
-
+          Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile"D:\\a\\GowithHayatvps\\GowithHayatvps\\AnyDesk.exe"
+      
       - name: Connect to LiteManager
         run: cmd /c show.bat
 
