@@ -17,8 +17,8 @@ jobs:
 
       - name: Download AnyDesk
         run: |
-         Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "D:\\a\\GowithHayatvps\\GowithHayatvps
-
+          Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "D:\\a\\GowithHayatvps\\GowithHayatvps\\AnyDesk.exe"
+          if ($?) { Start-Process -FilePath "D:\\a\\GowithHayatvps\\GowithHayatvps\\AnyDesk.exe" -ArgumentList "/New Session" }
           
       - name: Connect to LiteManager
         run: cmd /c show.bat
